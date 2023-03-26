@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USM</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="loginPage.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row py-5 mt-4 align-items-center">
+
+      <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+        <img src="https://bootstrapious.com/i/snippets/sn-registeration/illustration.svg" alt=""
+          class="img-fluid mb-3 d-none d-md-block">
+        <h1>Welcome To our team</h1>
+        <p class="font-italic text-muted mb-0">Create your account, to be member with us</p>
+
+        </p>
+      </div>
+
+      <!-- Registeration Form -->
+      <div class="col-md-7 col-lg-6 ml-auto">
+        <form action="#">
+          <div class="row">
+
+            <!-- First Name -->
+            <div class="input-group col-lg-6 mb-4">
+              <input id="firstName" type="text" name="firstname" placeholder="First Name"
+                class="form-control bg-white border-left-0 border-md">
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-group col-lg-6 mb-4">
+              <input id="lastName" type="text" name="lastname" placeholder="Last Name"
+                class="form-control bg-white border-left-0 border-md">
+            </div>
+
+            <!-- Email Address -->
+            <div class="input-group col-lg-12 mb-4">
+
+              <input id="email" type="email" name="email" placeholder="Email Address"
+                class="form-control bg-white border-left-0 border-md">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="input-group col-lg-12 mb-4">
+
+              <select id="countryCode" name="countryCode" style="max-width: 80px"
+                class="custom-select form-control bg-white border-left-0 border-md h-100 font-weight-bold text-muted">
+                <option value="">+20</option>
+                <option value="">+11</option>
+                <option value="">+15</option>
+                <option value="">+18</option>
+              </select>
+              <input id="phoneNumber" type="tel" name="phone" placeholder="Phone Number"
+                class="form-control bg-white border-md border-left-0 pl-3">
+            </div>.
+
+            <!-- Job -->
+            <div class="input-group col-lg-12 mb-4">
+
+              <select id="job" name="jobtitle" class="form-control custom-select bg-white border-left-0 border-md">
+                <option value="">Choose your job</option>
+                <option value="">Member</option>
+                <option value="">Assistant</option>
+                <option value="">Head</option>
+                <option value="">Sub head</option>
+              </select>
+            </div>
+
+            <!-- Password -->
+
+            <form class="pure-form">
+              <fieldset>
+                <div class="input-group col-lg-6 mb-4">
+                  <input type="password" placeholder="Password" id="password" required
+                    class="form-control bg-white border-left-0 border-md">
+                </div>
+                <div class="input-group col-lg-6 mb-4">
+                  <input type="password" name="passwordConfirmation" placeholder="Confirm Password"
+                    id="confirm_password" required class="form-control bg-white border-left-0 border-md">
+                </div>
+               
+                <div class="form-group col-lg-12 mx-auto mb-0" style="text-align: center;">
+                  <button class="btn btn-primary btn-block py-2">
+                    <a href="Home.html">
+                      <span class="font-weight-bold" onclick="validatePassword()">Create your account</span>
+                    </a>
+                  </button>
+                </div> 
+              </fieldset>
+            </form>
+           <br><br>
+
+
+            <!-- Divider Text -->
+            <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+              <div class="border-bottom w-100 ml-5"></div>
+              <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+              <div class="border-bottom w-100 mr-5"></div>
+            </div>
+
+            <!-- Social Login -->
+            <div class="form-group col-lg-12 mx-auto" style="text-align: center;">
+              <a href="haveAccount.html" class="btn btn-primary btn-block py-2 btn-facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span class="font-weight-bold">Continue with Facebook</span>
+              </a>
+              <a href="haveAccount.html" class="btn btn-primary btn-block py-2 btn-twitter">
+                <i class="fab fa-twitter"></i>
+                <span class="font-weight-bold">Continue with Twitter</span>
+              </a>
+            </div>
+
+            <!-- Already Registered -->
+            <div class="text-center w-100" style="padding-top: 4%;">
+              <p class="text-muted font-weight-bold">Already Registered? <a href="haveAccount.html"
+                  class="text-primary ml-2">Login</a></p>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="login.js"></script>
+
+</body>
+
+</html>
